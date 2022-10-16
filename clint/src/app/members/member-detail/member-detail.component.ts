@@ -18,6 +18,7 @@ export class MemberDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadmember();
+    console.log(this.memberService.getMember( this.route.snapshot.paramMap.get('username')));
 
     this.galleryOptions = [
       {
